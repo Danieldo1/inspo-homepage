@@ -13,8 +13,8 @@ const BackgroundImage = () => {
   }, [dispatch]);
 
   return (
-    <div id="background__container" >
-      <img  src={imageUrls[currentImageUrlIndex]} alt="background"  style={myPhoto} />
+    <div id="background-image-container" >
+      <img  id="background-image " src={imageUrls[currentImageUrlIndex]} alt="background"  style={myPhoto} />
     </div>
   );
 };

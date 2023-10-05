@@ -5,13 +5,19 @@ import BackgroundImageRight from './features/background/components/BackgroundIma
 
 function App() {
   return (
-    <div>
+    <div className='App'>
     <BackgroundImage/>
-    <aside>
-      <BackgroundImageLeft/>
+    <header>
+
+    </header>
+    <aside className="left__control wallpaper-control" >
+      <BackgroundImageLeft  />
     </aside>
-    <aside>
-      <BackgroundImageRight />
+    <main>
+
+    </main>
+    <aside className="right__control wallpaper-control">
+      <BackgroundImageRight  />
     </aside>
     
     </div>

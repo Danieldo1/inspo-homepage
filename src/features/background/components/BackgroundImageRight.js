@@ -6,7 +6,7 @@ const BackgroundImageRight = () => {
     const dispatch = useDispatch();
 
     return (
-        <button onClick={() => dispatch(switchToNextImage())}>  
+        <button   onClick={() => dispatch(switchToNextImage())}>  
         {">"}
         </button>
     )
