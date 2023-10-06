@@ -1,21 +1,30 @@
 
-const API_KEY = ''
+// export const getCords = createAsyncThunk(
+//     'weather/getCords',
+//     async () => {
+//         const response = await fetch('https://ipapi.co/json');
+//         const json = await response.json();
+//         const data = {
+//             lat: json.latitude,
+//             lon: json.longitude
+//         }
+//         return data;
+//     }
+// )
 
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=7670088d9fd3025436e2f7e907ba9c31&units=metric`
-
-export const getWeather = async ( city, state ) => {
-    const response = await fetch(`${API_URL}&q=${city},${state}`);
-    const json = await response.json();
-
-    return { 
-    weatherMetadata: json.weather[0],
-    temperature: json.main.temp
-}
-}
-
-const weatherApi = {
-    
-    getWeather
-}
-
-export default weatherApi;
+// export const getWeather = createAsyncThunk(
+//     'weather/getWeather',
+//     async (coord) => {
+//         const { lat, lon } = coord;
+//         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_API_KEY_WEATHER}`)
+//         const json = await response.json();
+//         const data = {
+//             location: json.name,
+//             temp: json.main.temp,
+//             description: json.weather[0].description,
+//             icon: json.weather[0].icon,
+//             country: json.sys.country
+//         }
+//         return data;
+//     }
+// )
