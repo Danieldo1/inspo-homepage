@@ -8,9 +8,9 @@ import {
     chooseDescription,
     chooseIcon,
     chooseCountry,
-    getWeather,
-    getCords
 } from "./weatherSlice";
+import {    getWeather,
+    getCords } from '../../API/weatherApi/index';
 
 
 
