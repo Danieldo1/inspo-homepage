@@ -4,7 +4,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 export const getCords = createAsyncThunk(
     'weather/getCords',
     async () => {
-        const response = await fetch('https://ipapi.co/json');
+        const response = await fetch('https://freeipapi.com/api/json/');
         const json = await response.json();
         const data = {
             lat: json.latitude,

@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch} from "react-redux";
 import { switchToPreviousImage } from "../backgroundSlice";
 
+
 const BackgroundImageLeft = () => {
     const dispatch = useDispatch();
 

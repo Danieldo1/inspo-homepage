@@ -12,7 +12,7 @@ const Quote = () => {
     }, [dispatch]);
 
     return (
-        <div  id="quote">
+        <div  id="quote" onClick={() => dispatch(getFact())} >
             <p className="quote-message">{fact}</p>
         </div>
     )

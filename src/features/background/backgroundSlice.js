@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import unspalshApi from "../../API/imagesApi/index";
 
+
 export const getBackgroundImage = createAsyncThunk(
     "backgroundImage/getImage",
     unspalshApi.getImage
