@@ -438,3 +438,39 @@ footer{
 }
 
 }
+
+@media (min-width: 1200px) {
+  .App{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
+    gap: 116px 123px;
+    grid-template-areas:
+      "Header Header Header"
+      "Main Main Main"
+      "Footer Footer Footer";
+      height: 71vw;
+    overflow: hidden;
+  }
+  h1{
+    margin-top: 0px;
+  }
+  main{
+    margin-top: -30px;
+    max-width: fit-content;
+    height: fit-content;
+  }
+  
+  .timezone{
+    margin-left: 13px;
+  }
+  footer{
+    max-width: fit-content;
+    margin-left: 320px;
+    padding-bottom: 30px;
+    margin-bottom: 6px;
+    padding-top: 10px;
+  
+  }
+  
+  }
