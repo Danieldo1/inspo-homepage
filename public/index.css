@@ -60,14 +60,14 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 120px;
-  padding-top: 64px;
+  padding-top: 0px;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 5px;
   align-items: center;
-  height: 430px;
+  height: fit-content;
   background: rgba(191, 191, 192, 0.176);
-  background-blend-mode: darken;
+  backdrop-filter: blur(10px);
   border-radius: 10px;
 }
 
@@ -75,7 +75,7 @@ footer {
   grid-area: Footer;
   padding: 27px;
   background: rgba(191, 191, 192, 0.176);
-  backdrop-filter: blur(10px), opacity(0.5);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   margin-bottom: 17px;
     margin-right: 32px;
@@ -244,7 +244,7 @@ p {
   font-weight: 200;
   opacity: 0.5;
   transition: opacity 0.1s ease-in;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  text-shadow: 8px 0px 10px rgba(255, 255, 255, 1);
   cursor: pointer;
 }
 
@@ -337,7 +337,75 @@ p {
 }
 
 .quote-message {
+  font-size: 20px;
   margin: 0;
   margin-bottom: 4px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  main{
+    width: 300px;
+    margin-top: 124px;
+    border-radius: 20px;
+    padding-top: 0px;
+    margin-left: 38px;
+    height: fit-content;
+  }
+
+  .quote-message {
+    font-size: 18px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom-width: 20px;
+    padding-top: 27px;
+    text-align: center;
+    display: contents;
+    backdrop-filter: blur(10px);
+  }
+  .location {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .thought-title{
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .entry{
+    margin-top:5px
+  }
+.journal-input{
+  font-size: 20px;
+}
+.surface-green{
+  font-size: 15px;
+  width: 70%;
+}
+.surface-green:active {
+  box-shadow: none;
+  transform: translateY(-2);
+}
+
+.entries-list{
+  font-size: 18px;
+  
+}
+
+footer{
+  padding-top: 27px;
+  backdrop-filter: blur(10px);
+}
+.wallpaper-control button{
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 40px;
+}
+.temperature{
+  font-size: 18px
+}
+.location{
+  font-size: 18px;
+}
+
+
 }
